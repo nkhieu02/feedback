@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Course</title>
+  </head>
+  <body>
+    <p><%= it.course.name %></p>
+    <p>How would you rate this course?</p>
+    <form action="/courses/<%= it.course.courseId %>/feedbacks/1" method="POST">
+      <button type="submit">Poor</button>
+    </form>
+    <form action="/courses/<%= it.course.courseId %>/feedbacks/2" method="POST">
+        <button type="submit">Fair</button>
+    </form>
+    <form action="/courses/<%= it.course.courseId %>/feedbacks/3" method="POST">
+        <button type="submit">Good</button>
+    </form>
+    <form action="/courses/<%= it.course.courseId %>/feedbacks/4" method="POST">
+        <button type="submit">Very good</button>
+    </form>
+    <form action="/courses/<%= it.course.courseId %>/feedbacks/5" method="POST">
+        <button type="submit">Excellent</button>
+    </form>
+    <a href="/courses/<%= it.course.courseId %>">Back</a>
+  </body>
+</html>
